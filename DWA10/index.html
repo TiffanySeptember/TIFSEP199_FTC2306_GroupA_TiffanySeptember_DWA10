@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" class="sl-theme-dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoelace Background Color</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.10.0/cdn/themes/dark.css"
+    />
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+  </head>
+</head>
+<body class="container">
+  <h1>Tally Count</h1>
+  <div class="container">
+    <sl-card class="counter-card">
+      <div class="counter-content" id="counter">0</div>
+
+      <div slot="footer">
+        <sl-split-panel>
+          <div slot="start" class="container button red" id="subtractButton">
+            <sl-button variant="text" size="large" >-</sl-button>
+          </div>
+          <div slot="end" class="container button green" id="addButton">
+            <sl-button class="button-text" variant="text" size="large" >+</sl-button>
+          </div>
+        </sl-split-panel>
+        
+        <!-- Add the Reset Button -->
+        <sl-button class="purple" size="large" id="resetButton">Reset</sl-button>
+      </div>
+    </sl-card>
+  </div>
+  <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.10.0/cdn/shoelace.js"
+  ></script>
+</body>
+</html>
